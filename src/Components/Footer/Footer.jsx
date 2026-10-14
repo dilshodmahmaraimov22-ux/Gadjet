@@ -96,7 +96,6 @@ function Footer() {
             </div>
           </div>
 
-          {/* Boshqa ustunlar */}
           {columns.map((col) => (
             <div className="footer__col" key={col.id}>
               <h4 className="footer__title">{col.title}</h4>

@@ -19,7 +19,6 @@
   padding: 0 24px 40px;
 }
 
-/* ---------- Yuqori qism ---------- */
 .footer__top {
   display: grid;
   grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr;
@@ -37,7 +36,6 @@
   color: #121a2c;
 }
 
-/* ---------- Contact ---------- */
 .footer__address {
   margin: 0 0 8px;
   font-size: 10.5px;
@@ -97,7 +95,6 @@
   transform: translateY(-4px) scale(1.25);
 }
 
-/* ---------- Linklar ro'yxati ---------- */
 .footer__list {
   margin: 0;
   padding: 0;
@@ -126,7 +123,6 @@
   transform: translateX(5px);
 }
 
-/* ---------- Pastki qism ---------- */
 .footer__bottom {
   display: flex;
   align-items: center;
@@ -164,7 +160,6 @@
   color: #2b7a78;
 }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 992px) {
   .footer__top {
     grid-template-columns: repeat(4, 1fr);
