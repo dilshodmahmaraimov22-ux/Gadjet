@@ -79,7 +79,6 @@ function Category() {
         </p>
 
         <div className="category__grid">
-          {/* Chap karta */}
           <div className="category__popular">
             <h3 className="category__popular-title">Popular Categories</h3>
 
@@ -95,7 +94,6 @@ function Category() {
             </ul>
           </div>
 
-          {/* O'ng tomon */}
           <div className="category__right">
             <div className="category__items">
               {items.map((item) => (
