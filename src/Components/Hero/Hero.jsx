@@ -52,26 +52,21 @@ function WatchSvg() {
       role="img"
       aria-label="Smart watch"
     >
-      {/* Tasmalar */}
       <path d="M100 0H220L232 112H88Z" fill="#22252a" />
       <path d="M88 328H232L220 440H100Z" fill="#22252a" />
       <circle cx="160" cy="364" r="5" fill="#363a40" />
       <circle cx="160" cy="388" r="5" fill="#363a40" />
       <circle cx="160" cy="412" r="5" fill="#363a40" />
 
-      {/* Yon tugma */}
       <rect x="256" y="150" width="9" height="44" rx="3" fill="#2d3035" />
 
-      {/* Korpus */}
       <rect x="60" y="90" width="200" height="258" rx="48" fill="#3b3e44" />
       <rect x="70" y="100" width="180" height="238" rx="40" fill="#08090b" />
 
-      {/* Ekran: sana */}
       <text x="160" y="128" textAnchor="middle" fill="#9aa3b5" fontSize="9">
         THU
       </text>
 
-      {/* Uchta halqa */}
       <circle cx="112" cy="158" r="17" fill="none" stroke="#2b7a78" strokeWidth="3" />
       <circle cx="160" cy="158" r="17" fill="none" stroke="#4ade80" strokeWidth="3" />
       <circle cx="208" cy="158" r="17" fill="none" stroke="#f59e0b" strokeWidth="3" />
@@ -85,7 +80,6 @@ function WatchSvg() {
         90
       </text>
 
-      {/* Yurak urishi chizig'i */}
       <path
         d="M84 226 L104 226 L112 210 L120 242 L128 200 L138 248 L146 222 L172 222 L182 206 L192 238 L200 218 L236 218"
         fill="none"
@@ -95,7 +89,6 @@ function WatchSvg() {
         strokeLinejoin="round"
       />
 
-      {/* Pastki ikonkalar */}
       <circle cx="108" cy="288" r="11" fill="#38bdf8" />
       <circle cx="160" cy="288" r="11" fill="#8b5cf6" />
       <circle cx="212" cy="288" r="11" fill="#f59e0b" />
@@ -222,7 +215,6 @@ function Hero() {
             </div>
           </div>
 
-          {/* O'ng tomon */}
           <div className="hero__visual">
             <span className="hero__circle hero__circle--peach-big"></span>
             <span className="hero__circle hero__circle--teal"></span>
