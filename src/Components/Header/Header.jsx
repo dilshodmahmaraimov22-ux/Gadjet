@@ -1,27 +1,23 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 
-const links = [
-  { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
-  { to: "/company", label: "Company" },
-  { to: "/pages", label: "Pages" },
-  { to: "/blog", label: "Blog" },
-  { to: "/shop", label: "Shop" },
-];
+const links = ["Home", "About", "Company", "Pages", "Blog", "Shop"];
 
 function Header() {
   const [open, setOpen] = useState(false);
+  const [active, setActive] = useState("Home");
 
-  const closeMenu = () => setOpen(false);
+  const handleClick = (name) => {
+    setActive(name);
+    setOpen(false);
+  };
 
   return (
     <header className="header">
       <div className="header__container">
-        <Link to="/" className="header__logo" onClick={closeMenu}>
+        <a href="#" className="header__logo">
           Logo
-        </Link>
+        </a>
 
         <button
           type="button"
@@ -38,26 +34,29 @@ function Header() {
         <div className={`header__menu ${open ? "header__menu--open" : ""}`}>
           <nav className="header__nav">
             <ul className="header__list">
-              {links.map((item) => (
-                <li className="header__item" key={item.to}>
-                  <NavLink
-                    to={item.to}
-                    end={item.to === "/"}
-                    onClick={closeMenu}
-                    className={({ isActive }) =>
-                      `header__link ${isActive ? "header__link--active" : ""}`
-                    }
+              {links.map((name) => (
+                <li className="header__item" key={name}>
+                  <a
+                    href="#"
+                    className={`header__link ${
+                      active === name ? "header__link--active" : ""
+                    }`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleClick(name);
+                    }}
                   >
-                    {item.label}
-                  </NavLink>
+                    {name}
+                  </a>
                 </li>
               ))}
             </ul>
           </nav>
 
-          <Link to="/start" className="header__btn" onClick={closeMenu}>
-            Get Started
-          </Link>
+          <a href="#" className="header__btn" onClick={() => setOpen(false)}>
+            <span className="header__btn-text">Get Started</span>
+            <span className="header__btn-arrow">→</span>
+          </a>
         </div>
       </div>
     </header>
