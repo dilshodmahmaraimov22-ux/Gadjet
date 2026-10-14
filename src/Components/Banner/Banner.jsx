@@ -213,7 +213,6 @@ function Banner() {
   return (
     <section className="banner">
       <div className="banner__container">
-        {/* ---------- How it works ---------- */}
         <div className="banner__head">
           <span className="banner__pill">How It Work ?</span>
           <h2 className="banner__title">
@@ -242,7 +241,6 @@ function Banner() {
           </div>
         </div>
 
-        {/* ---------- Newsletter ---------- */}
         <div className="banner__news">
           <div className="banner__news-content">
             <h2 className="banner__news-title">Subscribe our newsletter</h2>
@@ -304,7 +302,6 @@ function Banner() {
           </div>
         </div>
 
-        {/* ---------- CTA ---------- */}
         <div className="banner__cta">
           <p className="banner__cta-text">Ready to get started?</p>
           <a href="#" className="banner__cta-btn">
