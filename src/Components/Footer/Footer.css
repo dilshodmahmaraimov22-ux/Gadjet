@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+
+.footer {
+  width: 100%;
+  background: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  color: #121a2c;
+}
+
+.footer *,
+.footer *::before,
+.footer *::after {
+  box-sizing: border-box;
+}
+
+.footer__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px 40px;
+}
+
+/* ---------- Yuqori qism ---------- */
+.footer__top {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr;
+  gap: 32px 24px;
+  padding: 40px 0 44px;
+  border-top: 1px solid #dfe2e8;
+  border-bottom: 1px solid #dfe2e8;
+}
+
+.footer__title {
+  margin: 0 0 16px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #121a2c;
+}
+
+/* ---------- Contact ---------- */
+.footer__address {
+  margin: 0 0 8px;
+  font-size: 10.5px;
+  line-height: 1.6;
+  color: #9ca3af;
+}
+
+.footer__phone {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 10.5px;
+  font-weight: 500;
+  color: #121a2c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer__phone:hover {
+  color: #2b7a78;
+}
+
+.footer__email {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-size: 10.5px;
+  color: #4a9ae8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer__email:hover {
+  color: #2b7a78;
+  text-decoration: underline;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer__social-link {
+  display: flex;
+  width: 14px;
+  height: 14px;
+  color: #1f2937;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer__social-link svg {
+  width: 100%;
+  height: 100%;
+}
+
+.footer__social-link:hover {
+  color: #2b7a78;
+  transform: translateY(-4px) scale(1.25);
+}
+
+/* ---------- Linklar ro'yxati ---------- */
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__item {
+  margin-bottom: 8px;
+}
+
+.footer__item:last-child {
+  margin-bottom: 0;
+}
+
+.footer__link {
+  display: inline-block;
+  font-size: 10.5px;
+  line-height: 1.6;
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #2b7a78;
+  transform: translateX(5px);
+}
+
+/* ---------- Pastki qism ---------- */
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  padding-top: 28px;
+}
+
+.footer__copy {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.footer__legal {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__legal-link {
+  font-size: 10px;
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer__legal-link:hover {
+  color: #2b7a78;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 992px) {
+  .footer__top {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px 24px;
+  }
+
+  .footer__col--contact {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer__container {
+    padding: 0 20px 32px;
+  }
+
+  .footer__top {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 32px 0 36px;
+  }
+
+  .footer__title {
+    margin-bottom: 12px;
+  }
+
+  .footer__address,
+  .footer__phone,
+  .footer__email,
+  .footer__link {
+    font-size: 12px;
+  }
+
+  .footer__legal-link {
+    font-size: 11px;
+  }
+
+  .footer__social-link {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding-top: 24px;
+    text-align: center;
+  }
+
+  .footer__legal {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer__top {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer__link,
+  .footer__social-link,
+  .footer__phone,
+  .footer__email,
+  .footer__legal-link {
+    transition: none;
+  }
+}
